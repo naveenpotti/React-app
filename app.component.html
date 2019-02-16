@@ -1,0 +1,21 @@
+<router-outlet></router-outlet>
+<!-- Modal -->
+<div id="myModal" class="modal" role="dialog" [ngStyle]="{'display': showSessionTimeoutWarningPopup}" style="margin-top:25%">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Warning </h4>
+            </div>
+            <div class="modal-body">
+                
+                <p>Session will expire in {{warningTime}} minutes. Save unsaved changes</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="resetSession()" data-dismiss="modal">RELOAD SESSION</button>
+            </div>
+        </div>
+
+    </div>
+</div>
